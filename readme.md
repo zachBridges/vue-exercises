@@ -1,4 +1,4 @@
-# HelloWorld Vue Training Exercises
+# Vue Training Exercises
 
 ## Form Validation
 
