@@ -1,39 +1,24 @@
-# Vue Training Exercises
+# HelloWorld Vue Training Exercises
 
-This repository contains exercises to help aid people in learning the Vue framework.
+## Deploy a static webpage with a background image
 
-Each **branch** contains an exercise. The readme.md file at the root of the project contains instructions (in the form of a user story). 
+### Requirements
+As a web developer, I want to use the Vue CLI to deploy a static website so that I can make the big dollars. 
 
-## Prerequisites
-You'll need node, npm (the node package manager), and the Vue CLI to run this project.
+#### Acceptance Criteria
+* A background image for the static website is set 
+* `npm run build` was used to deploy the site
+* Static site can be previewed using the file:// protocol 
+  * All should resolve without error
 
-To install node, visit [https://nodejs.org](https://nodejs.org).
+#### Implementation Details
+* __You may only use the style binding to accomplish this task__
+  * I.e., you may not use an absolutely positioned image for the background 
+* For the background, use the image located @ assets/background.jpg
+* __You must also fix__ the hero image (hero.gif)
+* __You may only use relative file paths__
+  * I.e., you may not upload the image to S3 and serve it from there
 
-To install npm, visit [https://www.npmjs.com/get-npm](https://www.npmjs.com/get-npm).
-
-To install the Vue CLI, you can use npm as folows:
-```
-npm install -g @vue/cli
-```
-Please note that the current version of the Vue CLI is 3.
-
-## Setup
-To run any of these training exercises, you should only have to install dependencies using `npm i` 
-
-
-## Usage
-`git checkout BRANCHNAME` and then `npm run serve` to begin.
-
-## Exercises
-| Name                  | Branch Name                  |  
-| --------------------- |:----------------------------:| 
-| Get API               | get-api                      |
-| Form Validation       | centered                     |
-| Mortgage Calculator   | mortgage-calculator          |
-| Build a Static Site   | background-image-static-site |
-
-## Contributing
-
-If you'd like to add an exercise, you are free to do so! Let's learn together! 
-
-
+#### Challenge
+_If you finish quickly_
+* Create a slideshow of background images using the assetss in /assets/challenge/ 

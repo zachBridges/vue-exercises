@@ -1,25 +1,22 @@
 <template>
-  <div id="app">
-    <img src="https://media0.giphy.com/media/fedryX7dMGMe6lgqDm/giphy.gif?cid=3640f6095bd895c8794e7a466bb07658" alt="Hello World"/>
+  <div id="static-website" :style="">
+    <h1>It's my first static website</h1>
+    <img src="hero.gif" class="hero-image"/>
   </div>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+#static-website {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  min-height: 400px;
+  padding: 1rem;
+  width: 100%;
+
 }
 </style>
+
