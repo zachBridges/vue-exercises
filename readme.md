@@ -1,24 +1,40 @@
-# HelloWorld Vue Training Exercises
+# Vue Training Exercises
 
-## Deploy a static webpage with a background image
+## Mortgage Calculator
 
 ### Requirements
-As a web developer, I want to use the Vue CLI to deploy a static website so that I can make the big dollars. 
+As a potential homebuyer, I want to know what my monthly payment will be so that I can ensure I am able to afford the home.
 
 #### Acceptance Criteria
-* A background image for the static website is set 
-* `npm run build` was used to deploy the site
-* Static site can be previewed using the file:// protocol 
-  * All should resolve without error
+* The user is able to see their mortgage details.
+* Calculation is made using the formula: 
+  * M = ( P ( 1 + (r/12) )<sup>Y</sup>(r/12) ) / ( (1 + (r/12) )<sup>Y</sup> - 1 )
+  where 
+    * M = monthly payment
+    * r = the loan interest rate expressed as a decimal
+      * we divide r by 12 to get a _monthly_ rate
+    * P = principle (amount borrowed from the bank)
+    * Y = term (in months; i.e, 360 months = 30 years)
+  * Formula was taken from [this website](https://www.mtgprofessor.com/formulas.htm) - please use it as a reference.
 
 #### Implementation Details
-* __You may only use the style binding to accomplish this task__
-  * I.e., you may not use an absolutely positioned image for the background 
-* For the background, use the image located @ assets/background.jpg
-* __You must also fix__ the hero image (hero.gif)
-* __You may only use relative file paths__
-  * I.e., you may not upload the image to S3 and serve it from there
+* __You may not use a button to submit your form__
+  * The calculator should update all values instantly without a form submission
+  * Updating any field should update the rest of the fields' values
+    * User cannot update payment field (it is purely a calculation)
 
 #### Challenge
 _If you finish quickly_
-* Create a slideshow of background images using the assetss in /assets/challenge/ 
+* Auto-format the user's rate and mortgage amount
+  * Example: inputting '462' will output '4.62%'
+  * Example: inputting '100000' will output '$100,000'
+
+OR
+
+* Provide a dropdown menu for term using the following values (in years)
+  * 10, 15, 20, 25, 30
+
+OR
+
+* Add a variable rate feature
+  * I.e., the rate of the loan will change over time
