@@ -1,24 +1,26 @@
 # HelloWorld Vue Training Exercises
 
-## Deploy a static webpage with a background image
+## Form Validation
 
 ### Requirements
-As a web developer, I want to use the Vue CLI to deploy a static website so that I can make the big dollars. 
+As a user, I want to be guided through filling out a contact form so that I can submit accurate information to the server (in order to be contacted later).
 
 #### Acceptance Criteria
-* A background image for the static website is set 
-* `npm run build` was used to deploy the site
-* Static site can be previewed using the file:// protocol 
-  * All should resolve without error
+* Submitting an invalid form shows errors 
+* No errors should be displayed before form is submitted
+  * Errors are not shown initially
+* Name field requires at least three characters to be valid
+* Email field requires a valid email address 
+* Phone number field requires a valid phone number 
+  * Phone number must be a minimum of 10 digits
+
 
 #### Implementation Details
-* __You may only use the style binding to accomplish this task__
-  * I.e., you may not use an absolutely positioned image for the background 
-* For the background, use the image located @ assets/background.jpg
-* __You must also fix__ the hero image (hero.gif)
-* __You may only use relative file paths__
-  * I.e., you may not upload the image to S3 and serve it from there
+* Write your own validation or use a library
+* Any regex validation must be as performant as possible
+* Form should not submit to server until form data is valid
+* Do your best to have NO linter errors
 
 #### Challenge
 _If you finish quickly_
-* Create a slideshow of background images using the assetss in /assets/challenge/ 
+* Combine the email and mobile number fields so that a user can provide *either* an email address *or* phone number

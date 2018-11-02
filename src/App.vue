@@ -1,22 +1,54 @@
 <template>
-  <div id="static-website" :style="">
-    <h1>It's my first static website</h1>
-    <img src="hero.gif" class="hero-image"/>
+  <div id="app">
+    <form
+      id="myForm"
+      method="post">
+
+      <h2>Contact Us</h2>
+
+      <label for="name">What's your name?</label>
+      <span class="form-error">Please let us know what you call you by</span>
+      <input
+        type="text"
+        name="name"
+        placeholder="Your name"/>
+
+      <label for="email">What's your email address?</label>
+      <span class="form-error">Please provide a valid email address</span>
+      <input
+        type="text"
+        name="email"
+        placeholder="Your email address"/>
+
+      <label for="phone">What's your phone number?</label>
+      <span class="form-error">Please provide a valid phone number</span>
+      <input
+        type="tel"
+        name="phone"
+        placeholder="Your phone number"/>
+
+      <span class="form-error">
+        Please provide either an email address <strong>or</strong> phone number
+      </span><br/>
+      <span class="form-error">Please provide your name</span><br/>
+
+      <button type="submit" class="button">Submit this form</button>
+
+    </form>
   </div>
 </template>
 
 <style lang="scss">
-#static-website {
+#app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  color: #2c3e50;
   font-family: "Avenir", Helvetica, Arial, sans-serif;
-  min-height: 400px;
   padding: 1rem;
-  width: 100%;
+}
 
+// override base Foundation styles
+.form-error {
+  display: inline-block;
 }
 </style>
-
