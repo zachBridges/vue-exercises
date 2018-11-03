@@ -11,11 +11,11 @@ To install node, visit [https://nodejs.org](https://nodejs.org).
 
 To install npm, visit [https://www.npmjs.com/get-npm](https://www.npmjs.com/get-npm).
 
-To install the Vue CLI, you can use npm as folows:
+To install the Vue CLI, you can use npm as follows:
 ```
 npm install -g @vue/cli
 ```
-Please note that the current version of the Vue CLI is 3.
+Please note that version 3 of the Vue CLI was used to create these exercises.
 
 ## Setup
 To run any of these training exercises, you should only have to install dependencies using `npm i` 
@@ -32,8 +32,17 @@ To run any of these training exercises, you should only have to install dependen
 | Mortgage Calculator   | mortgage-calculator          |
 | Build a Static Site   | background-image-static-site |
 
+### A note about each exercise's instructions
+Each exercise was written as a [user story](https://en.wikipedia.org/wiki/User_story). If you're unfamiliar with them, this is a great chance to also practice your skills regarding interpreting and implementing requirements! 
+
+Sometimes you may find that the "acceptance criteria" (AC) of a story are vague. As developers, we're tasked with providing very explicit instructions and often expect that level of specificity in our requirements. However, AC are sometimes written ambiguously - which can be a good thing! Rather than dictating every nuance of how to implement something, vague AC allows a project to rely on the developer's expertise to solve a problem. A developer can enjoy the freedom to pursue the solution that she or he believes is _best_. This works especially well in situations where the work needs to be done quickly (such as in [agile software development](https://en.wikipedia.org/wiki/Agile_software_development)).
+
 ## Contributing
 
-If you'd like to add an exercise, you are free to do so! Let's learn together! 
+If you'd like to add an exercise, you are free to do so! Simply create a new branch with your exercise. 
+
+Please also create a pull request to **update the 'Exercises' section in the master branch's readme** with the exercise's name and branch name.
+
+Let's learn together! 
 
 
