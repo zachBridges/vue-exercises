@@ -25,12 +25,18 @@ To run any of these training exercises, you should only have to install dependen
 `git checkout BRANCHNAME` and then `npm run serve` to begin.
 
 ## Exercises
-| Name                  | Branch Name                  |  
-| --------------------- |:----------------------------:| 
-| Get API               | get-api                      |
-| Form Validation       | centered                     |
-| Mortgage Calculator   | mortgage-calculator          |
-| Build a Static Site   | background-image-static-site |
+
+These exercises are structured so that a developer can follow along with the [offical Vue guide](https://vuejs.org/v2/guide/). While the exercises do not have a 1-to-1 relationship with the topcis in the Vue guide, the exercises do follow the general order in which a developer would explore these topics.
+
+It is recommended that you approach the exercises in this order:
+
+| #  | Name                  | Branch Name                  |  
+|:---| :-------------------: |:----------------------------:|
+| 1  | Build a Static Site   | background-image-static-site | 
+| 2  | Get API               | get-api                      |
+| 3  | Form Validation       | centered                     |
+| 4  | Mortgage Calculator   | mortgage-calculator          |
+
 
 ### A note about each exercise's instructions
 Each exercise was written as a [user story](https://en.wikipedia.org/wiki/User_story). If you're unfamiliar with them, this is a great chance to also practice your skills regarding interpreting and implementing requirements! 
