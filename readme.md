@@ -25,12 +25,15 @@ To run any of these training exercises, you should only have to install dependen
 `git checkout BRANCHNAME` and then `npm run serve` to begin.
 
 ## Exercises
+
 | Name                  | Branch Name                  |  
 | --------------------- |:----------------------------:| 
-| Get API               | get-api                      |
 | Form Validation       | centered                     |
-| Mortgage Calculator   | mortgage-calculator          |
 | Build a Static Site   | background-image-static-site |
+| Update User Data      | update-user-data             |
+| Get API               | get-api                      |
+| Mortgage Calculator   | mortgage-calculator          |
+
 
 ### A note about each exercise's instructions
 Each exercise was written as a [user story](https://en.wikipedia.org/wiki/User_story). If you're unfamiliar with them, this is a great chance to also practice your skills regarding interpreting and implementing requirements! 
