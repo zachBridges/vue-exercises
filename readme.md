@@ -26,13 +26,17 @@ To run any of these training exercises, you should only have to install dependen
 
 ## Exercises
 
-| Name                  | Branch Name                  |  
-| --------------------- |:----------------------------:| 
-| Form Validation       | centered                     |
-| Build a Static Site   | background-image-static-site |
-| Update User Data      | update-user-data             |
-| Get API               | get-api                      |
-| Mortgage Calculator   | mortgage-calculator          |
+These exercises are structured so that a developer can follow along with the [offical Vue guide](https://vuejs.org/v2/guide/). While the exercises do not have a 1-to-1 relationship with the topcis in the Vue guide, the exercises do follow the general order in which a developer would explore these topics.
+
+It is recommended that you approach the exercises in this order:
+
+| #  | Name                  | Branch Name                  |  
+|:---| :-------------------: |:----------------------------:|
+| 1  | Build a Static Site   | background-image-static-site | 
+| 2  | Get API               | get-api                      |
+| 3  | Form Validation       | form-validation              |
+| 4  | Update User Data      | update-user-data             |
+| 5  | Mortgage Calculator   | mortgage-calculator          |
 
 
 ### A note about each exercise's instructions
