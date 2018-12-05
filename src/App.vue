@@ -1,14 +1,42 @@
 <template>
   <div id="app">
-    <img src="https://media0.giphy.com/media/fedryX7dMGMe6lgqDm/giphy.gif?cid=3640f6095bd895c8794e7a466bb07658" alt="Hello World"/>
+    <EmailUpdate/>
+    <Thanks/>
   </div>
 </template>
+
+<script>
+import { EmailUpdate, Thanks } from './views';
+import User from './data/test-user';
+
+export default {
+  name: 'App',
+  components: {
+    EmailUpdate,
+    Thanks,
+  },
+  data() {
+    return {
+      currentView: 'EmailUpdate',
+      user: User.user,
+    };
+  },
+  methods: {
+    onUserUpdate(userData) {
+      this.user = Object.assign({}, this.user, userData);
+      this.currentView = 'EmailUpdate'
+    },
+  },
+};
+</script>
+
 
 <style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 1rem;
   text-align: center;
   color: #2c3e50;
 }
@@ -23,3 +51,4 @@
   }
 }
 </style>
+

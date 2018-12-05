@@ -1,48 +1,29 @@
 # Vue Training Exercises
 
-This repository contains exercises to help aid people in learning the Vue framework.
+## Passing data between components
 
-Each **branch** contains an exercise. The readme.md file at the root of the project contains instructions (in the form of a user story). 
+### Requirements
+As a user, I want to be able to update my email address so that the business knows where to contact me.
 
-## Prerequisites
-You'll need node, npm (the node package manager), and the Vue CLI to run this project.
+### Acceptance Criteria
+* User is able to enter their email address and submit it
+* After submitting a valid email address, the user should be shown a confirmation 
+  * Use the Thanks component for the confirmation
+* Only one view is visible at a time
+  * Ensure that the directive you use to display this component is the _best_ option 
+* Running the app produces no errors (in the console or in the terminal)
 
-To install node, visit [https://nodejs.org](https://nodejs.org).
+### Implementation Details
+* Update all placeholders (they look like this: %%placeholder%%) with actual values 
+  * I.e., if the placeholder is `%%email%%`, replace that with the correct value for the user's email address
+* Submitting the user's email address should update the _app's_ data such that other components (`Thanks.vue`) show the _updated_ email address
+  * I.e., the Thanks component should get it's data from the parent component, `App.vue`
+* You may _not_ use an absolute path for fetching the user's avatar (in `EmailUpdate.vue`)
+  * The solution _requires_ you to understand how the Vue CLI is going to fetch the image 
+  * The path for the avatar must be what is provided in `src/data/test-user.js`
 
-To install npm, visit [https://www.npmjs.com/get-npm](https://www.npmjs.com/get-npm).
-
-To install the Vue CLI, you can use npm as follows:
-```
-npm install -g @vue/cli
-```
-Please note that version 3 of the Vue CLI was used to create these exercises.
-
-## Setup
-To run any of these training exercises, you should only have to install dependencies using `npm i` 
-
-
-## Usage
-`git checkout BRANCHNAME` and then `npm run serve` to begin.
-
-## Exercises
-| Name                  | Branch Name                  |  
-| --------------------- |:----------------------------:| 
-| Get API               | get-api                      |
-| Form Validation       | centered                     |
-| Mortgage Calculator   | mortgage-calculator          |
-| Build a Static Site   | background-image-static-site |
-
-### A note about each exercise's instructions
-Each exercise was written as a [user story](https://en.wikipedia.org/wiki/User_story). If you're unfamiliar with them, this is a great chance to also practice your skills regarding interpreting and implementing requirements! 
-
-Sometimes you may find that the "acceptance criteria" (AC) of a story are vague. As developers, we're tasked with providing very explicit instructions and often expect that level of specificity in our requirements. However, AC are sometimes written ambiguously - which can be a good thing! Rather than dictating every nuance of how to implement something, vague AC allows a project to rely on the developer's expertise to solve a problem. A developer can enjoy the freedom to pursue the solution that she or he believes is _best_. This works especially well in situations where the work needs to be done quickly (such as in [agile software development](https://en.wikipedia.org/wiki/Agile_software_development)).
-
-## Contributing
-
-If you'd like to add an exercise, you are free to do so! Simply create a new branch with your exercise. 
-
-Please also create a pull request to **update the 'Exercises' section in the master branch's readme** with the exercise's name and branch name.
-
-Let's learn together! 
-
-
+### Challenge
+* If the user's email address did not change (i.e., user provided their current email to the EmailUpdate component), show the user the Thanks component with a conditional message:
+  * If the user's email address changed, show the copy, "You updated your email to %%email%%." 
+  * If the user's email address did not change, show the copy, "You provided the same email address (%%email%%) that you were already registered with."
+* Refactor the method, `onUserUpdate` in `App.vue` to use the spread operator (not Object.assign)
