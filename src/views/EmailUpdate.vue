@@ -1,9 +1,6 @@
 <template>
   <div>
     <h2>Update Your Email Address</h2>
-    <!-- change template strings to have PLACEHOLDER stuff  -->
-    <div class="avatar" :style="{backgroundImage: 'url('+%%avatar%%+')'}">
-    </div>
     <p>Hi, {{%%firstName%%}}. Has your email recently changed? Update us if it has!</p>
     {{user}}
     <form v-on:submit.prevent="submitForm">
@@ -43,18 +40,6 @@ export default {
 </script>
 
 <style lang="scss">
-$avatarSquareDimensions: 100px;
-.avatar{
-  background-color: white;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  border-radius: $avatarSquareDimensions;
-  box-shadow: 1px 2px 3px black;
-  display: inline-block;
-  height: $avatarSquareDimensions;
-  width: $avatarSquareDimensions;
-}
 .error{color: red;}
 label{
   font-weight: bold;
