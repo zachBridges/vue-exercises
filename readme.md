@@ -18,9 +18,6 @@ As a user, I want to be able to update my email address so that the business kno
   * I.e., if the placeholder is `%%email%%`, replace that with the correct value for the user's email address
 * Submitting the user's email address should update the _app's_ data such that other components (`Thanks.vue`) show the _updated_ email address
   * I.e., the Thanks component should get it's data from the parent component, `App.vue`
-* You may _not_ use an absolute path for fetching the user's avatar (in `EmailUpdate.vue`)
-  * The solution _requires_ you to understand how the Vue CLI is going to fetch the image 
-  * The path for the avatar must be what is provided in `src/data/test-user.js`
 
 ### Challenge
 * If the user's email address did not change (i.e., user provided their current email to the EmailUpdate component), show the user the Thanks component with a conditional message:
